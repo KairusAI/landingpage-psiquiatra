@@ -1,0 +1,94 @@
+.footer {
+  background: var(--color-blue);
+  color: var(--color-white);
+  padding: 3rem 1.25rem 0;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  max-width: 320px;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.socialLink {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.socialLink:hover {
+  text-decoration: underline;
+}
+
+.colTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.linkList,
+.contactList {
+  list-style: none;
+}
+
+.linkList li + li,
+.contactList li + li {
+  margin-top: 0.5rem;
+}
+
+.linkList a,
+.contactList a {
+  color: var(--color-white);
+  opacity: 0.95;
+}
+
+.linkList a:hover,
+.contactList a:hover {
+  text-decoration: underline;
+}
+
+.contactList li {
+  font-size: 0.95rem;
+}
+
+.copy {
+  padding: 1rem 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.copy p {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .wrap {
+    grid-template-columns: 1fr auto auto;
+    gap: 3rem;
+    text-align: left;
+  }
+
+  .menu {
+    min-width: 120px;
+  }
+
+  .contact {
+    min-width: 180px;
+  }
+}

@@ -1,0 +1,58 @@
+.section {
+  padding: 4rem 1.25rem;
+  background: var(--color-white);
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  color: var(--color-graphite);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.accent {
+  color: var(--color-teal);
+}
+
+.list {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background: var(--color-ice);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--color-gold-soft);
+}
+
+.quote {
+  font-size: 1rem;
+  color: var(--color-graphite);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.author strong {
+  display: block;
+  color: var(--color-graphite);
+  font-size: 0.95rem;
+}
+
+.author span {
+  font-size: 0.85rem;
+  color: var(--color-graphite-light);
+}
+
+@media (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
