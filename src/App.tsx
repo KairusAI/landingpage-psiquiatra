@@ -1,9 +1,14 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
-import Benefits from './components/Benefits'
-import Approach from './components/Approach'
-import Services from './components/Services'
+import Intro from './components/Intro'
 import About from './components/About'
+import Approach from './components/Approach'
+import Benefits from './components/Benefits'
+import Services from './components/Services'
+import Numbers from './components/Numbers'
+import Testimonials from './components/Testimonials'
+import Faq from './components/Faq'
+import CallToAction from './components/CallToAction'
 import Footer from './components/Footer'
 import styles from './App.module.css'
 
@@ -13,10 +18,15 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Benefits />
+        <Intro />
+        <About />
         <Approach />
         <Services />
-        <About />
+        <Numbers />
+        <Testimonials />
+        <Benefits />
+        <Faq />
+        <CallToAction />
       </main>
       <Footer />
     </div>

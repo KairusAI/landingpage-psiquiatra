@@ -46,10 +46,10 @@ export default function Hero() {
     <section id="hero" className={styles.hero} ref={sectionRef}>
       <div className={styles.content}>
         <h1 className={styles.title} ref={titleRef}>
-          Descubra como a <span className={styles.accent}>saúde mental</span> pode <span className={styles.accent}>ajudar você</span>
+          Você não precisa enfrentar isso sozinho(a).
         </h1>
         <p className={styles.subtitle} ref={descRef}>
-          Explore os benefícios do acompanhamento psiquiátrico e descubra uma abordagem humanizada e eficiente para melhorar sua qualidade de vida.
+          A Clínica Volpi é um espaço seguro, acolhedor e especializado em saúde mental. Sob a direção da Dra. Camila Volpi, nossa equipe está pronta para te ajudar a reencontrar o equilíbrio, a leveza e o sentido, um passo de cada vez.
         </p>
         <div className={styles.ctaWrap} ref={ctaRef}>
           <a
@@ -58,14 +58,17 @@ export default function Hero() {
             rel="noopener noreferrer"
             className={styles.cta}
           >
-            Agende uma consulta
+            Quero agendar minha consulta →
           </a>
         </div>
+        <p className={styles.badge} aria-hidden>Atendimento presencial e online</p>
       </div>
       <div className={styles.imageWrap} ref={imageRef}>
-        <div className={styles.imagePlaceholder} aria-hidden>
-          Imagem (placeholder)
-        </div>
+        <img
+          src="/hero-dra-volpi.jpeg"
+          alt="Dra. Camila Volpi — atendimento humanizado em saúde mental"
+          className={styles.heroImage}
+        />
       </div>
     </section>
   )

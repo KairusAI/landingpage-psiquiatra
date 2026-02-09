@@ -9,9 +9,13 @@ const CTA_URL = 'https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agenda
 
 const menuLinks = [
   { label: 'Home', href: '#hero' },
-  { label: 'Benefícios', href: '#beneficios' },
+  { label: 'Por que a Volpi', href: '#beneficios' },
   { label: 'Tratamentos', href: '#tratamentos' },
-  { label: 'Sobre', href: '#sobre' },
+  { label: 'Dra. Camila', href: '#sobre' },
+  { label: 'A Clínica', href: '#clinica' },
+  { label: 'Números', href: '#numeros' },
+  { label: 'Depoimentos', href: '#testimonials' },
+  { label: 'FAQ', href: '#faq' },
 ]
 
 export default function Footer() {
@@ -45,7 +49,7 @@ export default function Footer() {
       <div className={styles.wrap} ref={contentRef}>
         <div className={styles.brand}>
           <p className={styles.tagline}>
-            Explore os benefícios do acompanhamento em saúde mental e descubra uma abordagem humanizada para melhorar sua qualidade de vida.
+            Clínica Volpi — saúde mental com acolhimento. Atendimento presencial e online sob a direção da Dra. Camila Volpi.
           </p>
           <div className={styles.social} aria-label="Redes sociais">
             <a href="#" className={styles.socialLink} aria-label="Instagram">Instagram</a>
@@ -70,7 +74,7 @@ export default function Footer() {
           <h3 className={styles.colTitle}>Contatos</h3>
           <ul className={styles.contactList}>
             <li>Endereço — São Paulo, SP</li>
-            <li><a href="mailto:contato@natleaf.com.br">contato@natleaf.com.br</a></li>
+            <li><a href="mailto:contato@clinicavolpi.com.br">contato@clinicavolpi.com.br</a></li>
             <li>
               <a href={CTA_URL} target="_blank" rel="noopener noreferrer">+55 (11) 99999-9999</a>
             </li>
@@ -78,7 +82,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.copy}>
-        <p>Copyright © NatLeaf | Todos os Direitos Reservados</p>
+        <p>Copyright © Clínica Volpi | Todos os Direitos Reservados</p>
       </div>
     </footer>
   )

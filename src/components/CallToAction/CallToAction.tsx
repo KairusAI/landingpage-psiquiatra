@@ -71,7 +71,7 @@ export default function CallToAction() {
     <section id="cta" className={styles.section} ref={sectionRef}>
       <div className={styles.wrap}>
         <h2 className={styles.title} ref={titleRef}>
-          Pronto para dar o primeiro passo?
+          Buscar ajuda funciona. E nunca é tarde para começar.
         </h2>
         <p className={styles.text} ref={textRef}>
           Agende uma avaliação inicial. É confidencial, acolhedora e pode ser o início de uma nova fase.
@@ -83,7 +83,7 @@ export default function CallToAction() {
           rel="noopener noreferrer"
           className={styles.button}
         >
-          Agende sua avaliação
+          Quero agendar minha consulta →
         </a>
       </div>
     </section>

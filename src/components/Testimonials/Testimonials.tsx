@@ -72,7 +72,7 @@ export default function Testimonials() {
     <section id="testimonials" className={styles.section} ref={sectionRef}>
       <div className={styles.wrap}>
         <h2 className={styles.heading} ref={headingRef}>
-          O que dizem <span className={styles.accent}>quem nos procura</span>
+          O que dizem as pessoas que confiaram na Clínica Volpi
         </h2>
         <div className={styles.list} ref={listRef}>
           {testimonials.map((t, i) => (

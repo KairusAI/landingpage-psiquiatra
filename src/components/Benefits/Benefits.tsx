@@ -6,11 +6,12 @@ import styles from './Benefits.module.css'
 gsap.registerPlugin(ScrollTrigger)
 
 const items = [
-  { title: 'Bem-estar emocional', icon: '🧠' },
-  { title: 'Redução da ansiedade', icon: '🌿' },
-  { title: 'Qualidade do sono', icon: '🌙' },
-  { title: 'Acompanhamento especializado', icon: '🫂' },
-  { title: 'Sigilo e acolhimento', icon: '🔒' },
+  { title: 'Expertise clínica', desc: 'Equipe liderada por psiquiatra com formação rigorosa e atualização constante nas melhores práticas baseadas em evidência.', icon: '🩺' },
+  { title: 'Humanização real', desc: 'Aqui, você não é um número de prontuário. É uma pessoa com uma história que merece ser ouvida com tempo e atenção.', icon: '❤️' },
+  { title: 'Tratamento baseado em evidência', desc: 'Utilizamos protocolos reconhecidos internacionalmente, combinando farmacoterapia, psicoterapia e abordagens integrativas quando indicado.', icon: '🔬' },
+  { title: 'Abordagem multidisciplinar', desc: 'Psiquiatria, psicologia e outras especialidades trabalhando em conjunto para um cuidado completo.', icon: '🤝' },
+  { title: 'Sigilo absoluto', desc: 'Tudo o que acontece aqui, fica aqui. Sua privacidade é inegociável.', icon: '🔒' },
+  { title: 'Atendimento presencial e online', desc: 'Flexibilidade para que o cuidado chegue até você, onde quer que esteja.', icon: '📱' },
 ]
 
 export default function Benefits() {
@@ -44,6 +45,7 @@ export default function Benefits() {
   return (
     <section id="beneficios" className={styles.section} ref={sectionRef}>
       <div className={styles.wrap}>
+        <h2 className={styles.sectionTitle}>Por que escolher a Clínica Volpi?</h2>
         {items.map((item, i) => (
           <div
             key={item.title}
@@ -52,6 +54,7 @@ export default function Benefits() {
           >
             <span className={styles.icon} aria-hidden>{item.icon}</span>
             <h3 className={styles.title}>{item.title}</h3>
+            <p className={styles.desc}>{item.desc}</p>
           </div>
         ))}
       </div>

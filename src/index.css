@@ -1,15 +1,29 @@
-/* Paleta e base – inspirado no layout Dr. Mario Grieco */
+/* Paleta – tons escuros, claros e destaque */
 :root {
+  /* Escuros (preto e grafite) */
+  --color-black: #000000;
+  --color-black-soft: #111111;
+  --color-graphite: #2a2a2a;
+  /* Claros e destaque */
+  --color-off-white: #ecf4f3;
   --color-white: #ffffff;
-  --color-green: #70a65e;
-  --color-green-dark: #5d8f4e;
-  --color-blue: #2f5e80;
-  --color-blue-hover: #3d6f92;
-  --color-graphite: #2d3748;
-  --color-graphite-light: #4a5568;
-  --color-grey: #718096;
-  --color-ice: #f7fafc;
+  --color-accent: #5a9c94;
+  --color-accent-soft: #cce1df;
+  /* Semânticas (para uso nos componentes) */
+  --color-text: #111111;
+  --color-text-muted: #2a2a2a;
+  --color-bg-section: #ecf4f3;
+  --color-bg-surface: #ffffff;
+  --color-bg-dark: #111111;
+  --color-bg-dark-surface: #2a2a2a;
+  --color-text-on-dark: #ecf4f3;
   --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  /* Liquid glass (glassmorphism) – use com background semi-transparente + backdrop-filter */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-bg-strong: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-blur: 12px;
+  --glass-blur-strong: 20px;
 }
 
 *,
@@ -26,8 +40,8 @@ html {
 
 body {
   font-family: var(--font-sans);
-  color: var(--color-graphite);
-  background-color: var(--color-white);
+  color: var(--color-text);
+  background-color: var(--color-bg-section);
   line-height: 1.6;
   overflow-x: hidden;
 }

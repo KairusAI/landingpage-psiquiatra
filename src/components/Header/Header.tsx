@@ -6,9 +6,13 @@ const CTA_URL = 'https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agenda
 
 const navItems = [
   { label: 'Home', href: '#hero' },
-  { label: 'Benefícios', href: '#beneficios' },
+  { label: 'Dra. Camila', href: '#sobre' },
+  { label: 'A Clínica', href: '#clinica' },
   { label: 'Tratamentos', href: '#tratamentos' },
-  { label: 'Sobre', href: '#sobre' },
+  { label: 'Números', href: '#numeros' },
+  { label: 'Depoimentos', href: '#testimonials' },
+  { label: 'Por que a Volpi', href: '#beneficios' },
+  { label: 'FAQ', href: '#faq' },
 ]
 
 export default function Header() {
@@ -77,8 +81,8 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.wrap}>
-        <a href="#hero" className={styles.logo}>
-          NatLeaf<span className={styles.logoAccent}> Psiquiatria</span>
+        <a href="#hero" className={styles.logo} aria-label="Clínica Volpi — início">
+          <img src="/logo.svg" alt="" className={styles.logoImage} width="320" height="64" />
         </a>
         <nav className={styles.navDesktop} aria-label="Navegação principal">
           {navItems.map((item) => (
@@ -87,7 +91,7 @@ export default function Header() {
             </a>
           ))}
           <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className={styles.navCta}>
-            Contato
+            Agendar
           </a>
         </nav>
         <button
@@ -130,7 +134,7 @@ export default function Header() {
             </a>
           ))}
           <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className={styles.menuCta} onClick={closeMenu}>
-            Contato
+            Agendar
           </a>
         </nav>
       </div>

@@ -1,14 +1,11 @@
 .section {
   padding: 4rem 1.25rem;
-  background: var(--color-white);
+  background: var(--color-bg-section);
 }
 
 .wrap {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
 }
 
 .eyebrow {
@@ -16,47 +13,64 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-grey);
+  color: var(--color-text-muted);
   margin-bottom: 0.5rem;
 }
 
 .heading {
   font-size: clamp(1.35rem, 3vw, 1.75rem);
   font-weight: 700;
-  color: var(--color-graphite);
+  color: var(--color-text);
   margin-bottom: 1rem;
   line-height: 1.3;
 }
 
 .text {
   font-size: 0.95rem;
-  color: var(--color-graphite-light);
+  color: var(--color-text-muted);
   line-height: 1.7;
 }
 
-.text p + p {
+.text p + p,
+.text p + .list {
   margin-top: 0.75rem;
+}
+
+.list {
+  list-style: none;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.list li {
+  margin-top: 0.6rem;
+  padding-left: 0;
+}
+
+.list li strong {
+  color: var(--color-text);
 }
 
 .cta {
   display: inline-block;
   margin-top: 1.25rem;
   padding: 0.6rem 1.25rem;
-  background: var(--color-blue);
+  background: var(--color-accent);
   color: var(--color-white);
   font-weight: 600;
   font-size: 0.95rem;
   border-radius: 6px;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
 
 .cta:hover {
-  background: var(--color-blue-hover);
+  background: var(--color-graphite);
+  color: var(--color-text-on-dark);
 }
 
 @media (min-width: 768px) {
   .wrap {
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem 2rem;
+    max-width: 640px;
   }
 }

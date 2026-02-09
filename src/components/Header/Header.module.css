@@ -4,28 +4,33 @@
   left: 0;
   right: 0;
   z-index: 100;
-  background: var(--color-white);
+  background: var(--color-bg-section);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
 }
 
 .wrap {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.875rem 1.5rem;
+  padding: 0 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--color-graphite);
-  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  line-height: 0;
 }
 
-.logoAccent {
-  color: var(--color-graphite);
+.logoImage {
+  display: block;
+  height: 64px;
+  width: auto;
+  max-width: 320px;
+  object-fit: contain;
+  object-position: left center;
+  vertical-align: bottom;
 }
 
 .navDesktop {
@@ -34,29 +39,30 @@
 
 .navLink {
   padding: 0.5rem 0.75rem;
-  color: var(--color-graphite);
+  color: var(--color-text);
   font-weight: 500;
   font-size: 0.95rem;
   transition: color 0.2s;
 }
 
 .navLink:hover {
-  color: var(--color-green);
+  color: var(--color-graphite);
 }
 
 .navCta {
   display: inline-block;
   padding: 0.5rem 1.25rem;
-  background: var(--color-blue);
+  background: var(--color-accent);
   color: var(--color-white) !important;
   font-weight: 600;
   font-size: 0.95rem;
   border-radius: 6px;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
 }
 
 .navCta:hover {
-  background: var(--color-blue-hover);
+  background: var(--color-graphite);
+  color: var(--color-text-on-dark) !important;
 }
 
 .hamburger {
@@ -67,7 +73,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--color-graphite);
+  color: var(--color-text);
 }
 
 .hamburgerLine {
@@ -80,7 +86,7 @@
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(45, 55, 72, 0.4);
+  background: rgba(17, 17, 17, 0.5);
   backdrop-filter: blur(4px);
   z-index: 99;
 }
@@ -91,34 +97,36 @@
   right: 0;
   bottom: 0;
   width: min(280px, 85vw);
-  background: var(--color-white);
-  padding: 5rem 1.5rem 2rem;
+  background: var(--color-bg-surface);
+  padding: 3.25rem 1.25rem 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.25rem;
   box-shadow: -4px 0 24px rgba(0, 0, 0, 0.08);
+  overflow-y: auto;
 }
 
 .menuLink {
-  padding: 0.75rem 0;
-  font-size: 1.05rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
   font-weight: 500;
-  color: var(--color-graphite);
-  border-bottom: 1px solid var(--color-ice);
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-off-white);
 }
 
 .menuLink:hover {
-  color: var(--color-green);
+  color: var(--color-graphite);
 }
 
 .menuCta {
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   padding: 0.75rem;
-  background: var(--color-blue);
+  background: var(--color-accent);
   color: var(--color-white) !important;
   font-weight: 600;
   border-radius: 8px;
   text-align: center;
+  flex-shrink: 0;
 }
 
 @media (min-width: 768px) {
