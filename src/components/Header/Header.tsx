@@ -2,7 +2,7 @@ import { useRef, useState, useLayoutEffect } from 'react'
 import { gsap } from 'gsap'
 import styles from './Header.module.css'
 
-const CTA_URL = 'https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação.'
+const CTA_URL = 'https://wa.me/5511930192825?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação.'
 
 const navItems = [
   { label: 'Home', href: '#hero' },

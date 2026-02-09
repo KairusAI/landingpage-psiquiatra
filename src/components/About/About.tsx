@@ -5,7 +5,7 @@ import styles from './About.module.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const CTA_URL = 'https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20com%20a%20Dra.%20Camila.'
+const CTA_URL = 'https://wa.me/5511930192825?text=Olá,%20gostaria%20de%20agendar%20com%20a%20Dra.%20Camila.'
 
 export default function About() {
   const sectionRef = useRef<HTMLElement>(null)

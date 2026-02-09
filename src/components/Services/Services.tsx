@@ -5,7 +5,7 @@ import styles from './Services.module.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const CTA_BASE = 'https://wa.me/5511999999999?text='
+const CTA_BASE = 'https://wa.me/5511930192825?text='
 
 const areas = [
   {

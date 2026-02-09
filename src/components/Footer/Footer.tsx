@@ -5,7 +5,7 @@ import styles from './Footer.module.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const CTA_URL = 'https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação.'
+const CTA_URL = 'https://wa.me/5511930192825?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação.'
 
 const menuLinks = [
   { label: 'Home', href: '#hero' },
@@ -76,7 +76,7 @@ export default function Footer() {
             <li>Endereço — São Paulo, SP</li>
             <li><a href="mailto:contato@clinicavolpi.com.br">contato@clinicavolpi.com.br</a></li>
             <li>
-              <a href={CTA_URL} target="_blank" rel="noopener noreferrer">+55 (11) 99999-9999</a>
+              <a href={CTA_URL} target="_blank" rel="noopener noreferrer">+55 11 93019-2825</a>
             </li>
           </ul>
         </div>

@@ -5,7 +5,7 @@ import styles from './CallToAction.module.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const CTA_URL = 'https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação.'
+const CTA_URL = 'https://wa.me/5511930192825?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação.'
 
 export default function CallToAction() {
   const sectionRef = useRef<HTMLElement>(null)
