@@ -6,7 +6,7 @@ import styles from './Benefits.module.css'
 gsap.registerPlugin(ScrollTrigger)
 
 const items = [
-  { title: 'Expertise clínica', desc: 'Equipe liderada por psiquiatra com formação rigorosa e atualização constante nas melhores práticas baseadas em evidência.', icon: '🩺' },
+  { title: 'Expertise clínica', desc: 'Equipe liderada por médicos com formação rigorosa e atualização constante nas melhores práticas baseadas em evidência.', icon: '🩺' },
   { title: 'Humanização real', desc: 'Aqui, você não é um número de prontuário. É uma pessoa com uma história que merece ser ouvida com tempo e atenção.', icon: '❤️' },
   { title: 'Tratamento baseado em evidência', desc: 'Utilizamos protocolos reconhecidos internacionalmente, combinando farmacoterapia, psicoterapia e abordagens integrativas quando indicado.', icon: '🔬' },
   { title: 'Abordagem multidisciplinar', desc: 'Psiquiatria, psicologia e outras especialidades trabalhando em conjunto para um cuidado completo.', icon: '🤝' },
