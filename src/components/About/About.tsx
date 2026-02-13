@@ -57,7 +57,7 @@ export default function About() {
           <h2 className={styles.title}>Conheça a Dra. Camila Volpi</h2>
           <div className={styles.text}>
             <p>
-              A Dra. Camila Volpi é médica psiquiatra, apaixonada pelo cuidado integral da mente humana. Com formação sólida e um olhar profundamente humano, ela fundou a Clínica Volpi com um propósito claro: criar um espaço onde as pessoas se sintam verdadeiramente ouvidas, sem julgamento, sem pressa, sem rótulos.
+              A Dra. Camila Volpi é médica, apaixonada pelo cuidado integral da mente humana. Com formação sólida e um olhar profundamente humano, ela fundou a Clínica Volpi com um propósito claro: criar um espaço onde as pessoas se sintam verdadeiramente ouvidas, sem julgamento, sem pressa, sem rótulos.
             </p>
             <p>
               Sua abordagem combina ciência de ponta com escuta atenta e individualizada, porque ela acredita que cada história é única e merece um cuidado que respeite essa singularidade.
@@ -70,7 +70,7 @@ export default function About() {
         <div className={styles.imageBlock} ref={imageRef}>
           <img
             src="/dra-camila-volpi.jpeg"
-            alt="Dra. Camila Volpi — médica psiquiatra, fundadora da Clínica Volpi"
+            alt="Dra. Camila Volpi — médica, fundadora da Clínica Volpi"
             className={styles.aboutImage}
           />
         </div>
