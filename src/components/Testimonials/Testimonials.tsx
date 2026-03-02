@@ -5,6 +5,8 @@ import styles from './Testimonials.module.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const CTA_URL = 'https://wa.me/5511930192825?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação.'
+
 const testimonials = [
   {
     quote: 'Encontrei um espaço onde pude me abrir sem julgamento. O tratamento mudou minha relação com a ansiedade.',
@@ -88,6 +90,11 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
+        </div>
+        <div className={styles.ctaWrap}>
+          <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className={styles.cta}>
+            Quero agendar minha avaliação →
+          </a>
         </div>
       </div>
     </section>

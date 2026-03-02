@@ -5,6 +5,8 @@ import styles from './Intro.module.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const CTA_URL = 'https://wa.me/5511930192825?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação.'
+
 export default function Intro() {
   const sectionRef = useRef<HTMLElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
@@ -65,6 +67,11 @@ export default function Intro() {
           <p className={styles.closing}>
             Você não está exagerando. O que você sente importa. E reconhecer que precisa de ajuda não é fraqueza. É, na verdade, o ato mais corajoso que você pode ter.
           </p>
+          <div className={styles.ctaWrap}>
+            <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className={styles.cta}>
+              Falar no WhatsApp →
+            </a>
+          </div>
         </div>
       </div>
     </section>

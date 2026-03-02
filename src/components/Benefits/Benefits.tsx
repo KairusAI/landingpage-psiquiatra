@@ -5,6 +5,8 @@ import styles from './Benefits.module.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const CTA_URL = 'https://wa.me/5511930192825?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação.'
+
 const items = [
   { title: 'Expertise clínica', desc: 'Equipe liderada por médicos com formação rigorosa e atualização constante nas melhores práticas baseadas em evidência.', icon: '🩺' },
   { title: 'Humanização real', desc: 'Aqui, você não é um número de prontuário. É uma pessoa com uma história que merece ser ouvida com tempo e atenção.', icon: '❤️' },
@@ -57,6 +59,11 @@ export default function Benefits() {
             <p className={styles.desc}>{item.desc}</p>
           </div>
         ))}
+        <div className={styles.ctaWrap}>
+          <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className={styles.cta}>
+            Falar com a clínica no WhatsApp →
+          </a>
+        </div>
       </div>
     </section>
   )

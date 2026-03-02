@@ -55,6 +55,27 @@
   color: var(--color-text-muted);
 }
 
+.ctaWrap {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cta:hover {
+  background: var(--color-white);
+  color: var(--color-text);
+}
+
 @media (min-width: 768px) {
   .list {
     grid-template-columns: repeat(3, 1fr);

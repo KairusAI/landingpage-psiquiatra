@@ -5,6 +5,8 @@ import styles from './Faq.module.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const CTA_URL = 'https://wa.me/5511930192825?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação.'
+
 const faqs = [
   {
     q: 'Qual a diferença entre psiquiatra e psicólogo?',
@@ -122,6 +124,12 @@ export default function Faq() {
             </li>
           ))}
         </ul>
+        <div className={styles.ctaWrap}>
+          <p className={styles.ctaText}>Ainda com dúvidas? Fale conosco pelo WhatsApp.</p>
+          <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className={styles.cta}>
+            Abrir conversa no WhatsApp →
+          </a>
+        </div>
       </div>
     </section>
   )

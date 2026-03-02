@@ -5,6 +5,8 @@ import styles from './Numbers.module.css'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const CTA_URL = 'https://wa.me/5511930192825?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação.'
+
 const stats = [
   { dado: '300 milhões de pessoas sofrem com depressão no mundo', fonte: 'OMS' },
   { dado: '9,3% da população brasileira tem ansiedade — somos o país mais ansioso do mundo', fonte: 'OMS' },
@@ -88,6 +90,11 @@ export default function Numbers() {
         <p className={styles.closing} ref={closingRef}>
           Buscar ajuda funciona. E nunca é tarde para começar.
         </p>
+        <div className={styles.ctaWrap}>
+          <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className={styles.cta}>
+            Agendar avaliação pelo WhatsApp →
+          </a>
+        </div>
       </div>
     </section>
   )
