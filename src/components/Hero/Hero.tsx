@@ -65,7 +65,7 @@ export default function Hero() {
       </div>
       <div className={styles.imageWrap} ref={imageRef}>
         <img
-          src="/hero-dra-volpi.jpeg"
+          src="/draVolpi.jpeg"
           alt="Dra. Camila Volpi — atendimento humanizado em saúde mental"
           className={styles.heroImage}
         />
